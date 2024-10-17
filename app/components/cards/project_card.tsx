@@ -1,3 +1,4 @@
+import Image from "next/image";
 import * as React from "react";
 
 export interface IProject_CardProps {
@@ -10,7 +11,13 @@ export interface IProject_CardProps {
 export function Project_Card(props: IProject_CardProps) {
   return (
     <div className="w-full rounded overflow-hidden shadow-lg">
-      <img className="w-full" src={props.img} alt={props.name} />
+      <Image
+        width={1000}
+        height={1000}
+        className="w-full h-auto"
+        src={props.img}
+        alt={props.name}
+      />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{props.name}</div>
         <p className="text-gray-700 text-base">{props.detail}</p>

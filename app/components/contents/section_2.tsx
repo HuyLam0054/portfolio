@@ -1,8 +1,6 @@
 import * as React from "react";
 
-export interface ISection_2Props {}
-
-export function Section_2(props: ISection_2Props) {
+export function Section_2() {
   return (
     <section className="bg-white dark:bg-gray-900" id="about">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">

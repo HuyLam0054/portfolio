@@ -5,9 +5,7 @@ import Link from "next/link";
 import * as React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-export interface IRootHeaderProps {}
-
-export function RootHeader(props: IRootHeaderProps) {
+export function RootHeader() {
   const [isOpenNav, setIsOpenNav] = React.useState(false);
   const [prevScrollPos, setPrevScrollPos] = React.useState(0);
   const [visible, setVisible] = React.useState(true);

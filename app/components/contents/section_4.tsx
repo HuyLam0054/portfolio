@@ -1,9 +1,7 @@
 import * as React from "react";
 import { Project_Card } from "../cards/project_card";
 
-export interface ISection_4Props {}
-
-export function Section_4(props: ISection_4Props) {
+export function Section_4() {
   return (
     <section className="bg-white dark:bg-gray-900" id="project">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">

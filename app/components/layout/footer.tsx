@@ -2,9 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
 
-export interface IRootFooterProps {}
-
-export function RootFooter(props: IRootFooterProps) {
+export function RootFooter() {
   return (
     <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">

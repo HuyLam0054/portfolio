@@ -1,8 +1,6 @@
 import * as React from "react";
 
-export interface ISection_1Props {}
-
-export function Section_1(props: ISection_1Props) {
+export function Section_1() {
   return (
     <section
       className="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply min-h-screen"

@@ -3,9 +3,7 @@ import * as React from "react";
 import { ContactButton } from "../buttons/contact_button";
 import { FaPhone } from "react-icons/fa";
 
-export interface ISpeedDial_1Props {}
-
-export function SpeedDial_1(props: ISpeedDial_1Props) {
+export function SpeedDial_1() {
   const [isOpenSpeedDial, setIsOpenSpeedDial] = React.useState(false);
   return (
     <div className="fixed end-6 bottom-6 group">
