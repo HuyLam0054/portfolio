@@ -3,7 +3,7 @@
 import React from "react";
 
 export interface IBadge {
-  name: String;
+  name: string;
 }
 
 export function Badge(props: IBadge) {

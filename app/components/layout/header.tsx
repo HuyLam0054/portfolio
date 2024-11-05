@@ -27,7 +27,7 @@ export function RootHeader() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [prevScrollPos]);
+  }, [prevScrollPos, handleScroll]);
 
   return (
     <nav
