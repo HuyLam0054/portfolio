@@ -1,18 +1,14 @@
 "use client";
-import {
-  Section_1,
-  Section_2,
-  Section_3,
-  Section_4,
-} from "./components/contents";
+import { Home, About, Experience, Projects } from "./components/contents";
+// import About from "./components/contents/about";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
-      <Section_1 />
-      <Section_2 />
-      <Section_3 />
-      <Section_4 />
+      <Home />
+      <About />
+      <Experience />
+      <Projects />
     </>
   );
 }

@@ -1,31 +1,57 @@
+/* eslint-disable @next/next/no-img-element */
+"use client";
 import Image from "next/image";
 import * as React from "react";
+import { IoCalendarOutline } from "react-icons/io5";
+import { Badge } from "../badge/language_badge";
 
-export interface IProject_CardProps {
-  name: string;
-  img: string;
-  detail: string;
-  //   badge: string[];
+export interface IProjectCardProps {
+  project_name: string;
+  url: string;
+  img_url: string;
+  start_time: string;
+  end_time: string;
+  detail: String;
+  language_tag: String[];
+  time_animation: number;
 }
 
-export function Project_Card(props: IProject_CardProps) {
+export function ProjectCard(props: IProjectCardProps) {
   return (
-    <div className="w-full rounded overflow-hidden shadow-lg">
+    <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] lg:flex mb-4">
       <Image
+        src={props.img_url}
+        alt={props.img_url}
         width={1000}
         height={1000}
-        className="w-full h-auto"
-        src={props.img}
-        alt={props.name}
+        className="lg:w-1/2 max-h-96 object-cover"
       />
-      <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">{props.name}</div>
-        <p className="text-gray-700 text-base">{props.detail}</p>
-      </div>
-      <div className="px-6 pt-4 pb-2">
-        <span className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">
-          Yellow
-        </span>
+
+      <div className="relative py-4 px-7">
+        <p className="text-sm text-gray-700 dark:text-gray-300 max-w-[600px] my-2 flex bottom-0 gap-2">
+          {props.language_tag.map((lang, index) => (
+            <Badge key={index} name={lang} />
+          ))}
+        </p>
+        <div className="mb-5">
+          <p className="text-lg lg:text-2xl text-gray-700 dark:text-gray-300 mb-2 max-w-[600px]">
+            <span className="text-gray-800 dark:text-gray-50 font-bold">
+              {props.project_name}
+            </span>
+          </p>
+
+          <p className="text-sm text-gray-700 dark:text-gray-300 mb-2 max-w-[600px]">
+            <span className="text-gray-800 dark:text-gray-50 flex flex-row">
+              <IoCalendarOutline className="mr-2 w-4 h-4" />
+              {props.start_time} - {props.end_time}
+            </span>
+          </p>
+          <p className="text-sm text-gray-700 dark:text-gray-300 max-w-[600px]">
+            <span className="text-gray-800 dark:text-gray-50 flex flex-row text-justify">
+              {props.detail}
+            </span>
+          </p>
+        </div>
       </div>
     </div>
   );

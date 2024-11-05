@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./styles/globals.css";
 import { Montserrat } from "next/font/google";
-import { SpeedDial_1 } from "./components/speed dial/sd_1";
 import { RootFooter, RootHeader } from "./components/layout";
 
 export const metadata: Metadata = {
@@ -20,7 +19,6 @@ export default function RootLayout({
         className={`${montserrat.className} overflow-y-scroll overflow-x-hidden`}
       >
         <RootHeader />
-        <SpeedDial_1 />
         {children}
         <RootFooter />
       </body>
