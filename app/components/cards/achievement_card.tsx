@@ -2,10 +2,10 @@ import * as React from "react";
 import { GiAchievement } from "react-icons/gi";
 
 export interface IAchievementProps {
-  name: String;
-  achievement: String;
-  time: String;
-  detail: String;
+  name: string;
+  achievement: string;
+  time: string;
+  detail: string;
 }
 
 export function Achievement(props: IAchievementProps) {

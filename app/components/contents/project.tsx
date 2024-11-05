@@ -3,9 +3,7 @@ import { applications, iProject } from "@/app/utils/experience";
 import * as React from "react";
 import { ProjectCard } from "../cards/project_card";
 
-export interface IMyProjectsProps {}
-
-export function Projects(props: IMyProjectsProps) {
+export function Projects() {
   return (
     <>
       <div

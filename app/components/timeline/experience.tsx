@@ -3,11 +3,11 @@ import { IoCalendarOutline } from "react-icons/io5";
 import { Badge } from "../badge/language_badge";
 
 export interface IExperienceProps {
-  name: String;
-  position: String;
-  start_time: String;
-  end_time: String;
-  detail: String;
+  name: string;
+  position: string;
+  start_time: string;
+  end_time: string;
+  detail: string;
   language: string[];
 }
 

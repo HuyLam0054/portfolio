@@ -15,7 +15,7 @@ export interface iProject {
   img_url: string;
   start_time: string;
   end_time: string;
-  detail: String;
+  detail: string;
   language_tag: iLangugeTag[];
 }
 export interface iProjectAnalytics {
@@ -25,7 +25,7 @@ export interface iProjectAnalytics {
   img_url: string;
   start_time: string;
   end_time: string;
-  detail: String;
+  detail: string;
 }
 export interface iAchievement {
   name: string;

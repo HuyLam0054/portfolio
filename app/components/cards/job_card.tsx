@@ -4,7 +4,7 @@ import React from "react";
 import { IoSparklesOutline } from "react-icons/io5";
 
 export interface IJobCardProps {
-  name: String;
+  name: string;
 }
 
 export function JobCard(props: IJobCardProps) {

@@ -11,8 +11,8 @@ export interface IProjectCardProps {
   img_url: string;
   start_time: string;
   end_time: string;
-  detail: String;
-  language_tag: String[];
+  detail: string;
+  language_tag: string[];
   time_animation: number;
 }
 
