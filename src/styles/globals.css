@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "flowbite-react/plugin/tailwindcss";
+@source "../../.flowbite-react/class-list.json";
+
+:root {
+  /* Background */
+  --background: #f8f5f0;
+  --surface: #ffffff;
+
+  /* Text */
+  --foreground: #1f2937;
+  --muted: #6b7280;
+
+  /* Luxury Gold */
+  --primary: #c8a96b;
+  --primary-hover: #b89355;
+
+  /* Accent */
+  --accent: #8b7355;
+
+  /* Border */
+  --border: #e5e7eb;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Inter", sans-serif;
+}
