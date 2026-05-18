@@ -3,9 +3,12 @@
 import { Navbar } from "@/data/layout/main-layout";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { CiMenuFries } from "react-icons/ci";
 import { FaArrowRight } from "react-icons/fa";
 
 const RootNavbar = () => {
+  const [openMenu, setOpenMenu] = useState<boolean>(false);
   return (
     <nav className="bg-gray-900 fixed w-full z-20 top-0 inset-s-0 border-b border-default">
       <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -34,30 +37,21 @@ const RootNavbar = () => {
             <FaArrowRight className="ms-1.5 mt-0.5" />
           </button>
           <button
-            type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+            onClick={() => {
+              setOpenMenu(!openMenu);
+            }}
+            className="inline-flex cursor-pointer items-center text-white p-3 w-10 h-10 hover:text-orange-300 border-2 ml-3 rounded-sm"
           >
             <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-6 h-6"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeWidth="2"
-                d="M5 7h14M5 12h14M5 17h14"
-              />
-            </svg>
+            <CiMenuFries className="" />
           </button>
         </div>
-        <div className="items-center justify-between hidden md:flex w-full md:w-auto md:order-1">
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
+        <div
+          className={`${
+            openMenu ? "flex" : "hidden"
+          } lg:flex flex-col lg:flex-row absolute lg:static top-20 left-0 w-full lg:w-auto bg-gray-900 lg:bg-transparent p-4 lg:p-0 z-50`}
+        >
+          <ul className="flex flex-col lg:flex-row gap-3 lg:gap-8">
             {Navbar.map((item, index) => (
               <li key={index}>
                 <Link
@@ -67,7 +61,7 @@ const RootNavbar = () => {
                   {item.name}
                 </Link>
               </li>
-            ))}{" "}
+            ))}
           </ul>
         </div>
       </div>

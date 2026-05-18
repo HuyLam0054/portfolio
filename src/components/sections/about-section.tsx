@@ -19,7 +19,7 @@ const AboutSection = () => {
           System Engineer hoặc Cloud Administrator.
         </p>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 p-6">
         {AboutMe.map((item, index) => (
           <button
             key={index}

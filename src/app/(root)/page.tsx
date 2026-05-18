@@ -11,15 +11,15 @@ export default function MainHome() {
   return (
     <div className="flex flex-col justify-center items-center mt-20">
       <HeroSection />
-      <div className="grid md:grid-cols-7 gap-2">
-        <div className="bg-gray-800 col-span-3 border p-8 md:p-5 rounded-xl">
+      <div className="grid lg:grid-cols-7 gap-2 px-4">
+        <div className="bg-gray-800 lg:col-span-3 border p-8 md:p-5 rounded-xl">
           <div className="mb-5 flex gap-5">
             <HiBriefcase className="text-2xl text-orange-300" />
             <span className="text-orange-300 text-xl uppercase">About me</span>
           </div>
           <AboutSection />
         </div>
-        <div className="bg-gray-800 col-span-4 border p-8 md:p-5 rounded-xl">
+        <div className="bg-gray-800 lg:col-span-4 border p-8 md:p-5 rounded-xl">
           <div className="mb-5 flex gap-5">
             <HiBriefcase className="text-2xl text-orange-300" />
             <span className="text-orange-300 text-xl uppercase">
