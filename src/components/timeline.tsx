@@ -1,54 +1,39 @@
 "use client";
-
-import {
-  Timeline,
-  TimelineBody,
-  TimelineContent,
-  TimelineItem,
-  TimelinePoint,
-  TimelineTime,
-  TimelineTitle,
-} from "flowbite-react";
-import { HiCalendar } from "react-icons/hi";
 import { IoCalendarOutline } from "react-icons/io5";
 
-type Props = { name: string; time: string; detail: string; current?: boolean };
+type Props = { name: string; company: string; time: string; detail: string };
 
-export function Timeline_Component({ name, time, detail }: Props) {
+export function Timeline2_Component({ name, company, time, detail }: Props) {
   return (
-    <Timeline>
-      <TimelineItem>
-        <TimelinePoint icon={HiCalendar} />
-        <TimelineContent>
-          <TimelineTime>{time}</TimelineTime>
-          <TimelineTitle>{name}</TimelineTitle>
-          <TimelineBody>{detail}</TimelineBody>
-        </TimelineContent>
-      </TimelineItem>
-    </Timeline>
-  );
-}
+    <div className="flex gap-4">
+      {/* Left Line + Dot */}
+      <div className="flex flex-col items-center">
+        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 border-4 border-orange-500">
+          <IoCalendarOutline className="text-orange-500 text-lg" />
+        </div>
 
-export function Timeline2_Component({ name, time, detail, current }: Props) {
-  return (
-    <ol className="relative border-s-2">
-      <li className="mb-10 ms-6">
-        <span className="absolute flex items-center justify-center w-6 h-6 bg-green-50 rounded-full -inset-s-3 ring-5 ring-orange-200">
-          <IoCalendarOutline className="text-green-700" />
-        </span>
-        <time className="bg-neutral-secondary-medium border border-default-medium text-heading text-xs font-medium px-1.5 py-0.5 rounded">
+        <div className="w-0.5 flex-1 bg-gray-700" />
+      </div>
+
+      {/* Content */}
+      <div className="pb-5">
+        <time className="inline-block text-[12px] px-2 py-1 rounded border border-gray-700 bg-gray-800 text-gray-300">
           {time}
         </time>
-        <h3 className="flex items-center mb-1 text-lg font-semibold text-heading my-2">
-          {name}
-          {current && (
-            <span className="ms-2 bg-brand-softer border border-brand-subtle text-fg-brand-strong text-xs font-medium px-1.5 py-0.5 rounded">
-              currently
-            </span>
-          )}
-        </h3>
-        <p className="mb-4 text-body max-w-5xl">{detail}</p>
-      </li>
-    </ol>
+
+        <div className="flex items-center gap-2 mt-3">
+          <h3 className="text-[15px] font-semibold text-white">{name}</h3>
+        </div>
+        <div className="flex items-center gap-2 mt-3">
+          <h4 className="text-[13px] font-semibold text-orange-300">
+            {company}
+          </h4>
+        </div>
+
+        <p className="text-[13px] mt-3 text-gray-400 max-w-3xl leading-7 line-clamp-2">
+          {detail}
+        </p>
+      </div>
+    </div>
   );
 }

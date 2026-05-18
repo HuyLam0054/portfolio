@@ -1,26 +1,23 @@
 export const Experience = [
   {
-    time: "01/2024 - 06/2024",
-    name: "Frontend Developer Intern",
-    detail:
-      "Tham gia phát triển giao diện website nội bộ bằng ReactJS và TypeScript. Tối ưu responsive cho nhiều thiết bị, làm việc với REST API và hỗ trợ sửa lỗi UI/UX theo yêu cầu từ team design.",
-  },
-  {
     time: "07/2024 - 02/2025",
-    name: "Junior Full Stack Developer",
+    name: "IT Helpdesk Support",
+    company: "ABC Technology",
     detail:
-      "Phát triển các chức năng backend với Node.js và Express, kết nối PostgreSQL và xây dựng API cho hệ thống quản lý đơn hàng. Đồng thời hỗ trợ frontend với Next.js và Tailwind CSS.",
+      "Hỗ trợ xử lý sự cố phần cứng, phần mềm và mạng nội bộ cho nhân viên công ty. Cài đặt máy tính, máy in, quản lý tài khoản người dùng và hỗ trợ troubleshooting hệ thống hằng ngày.",
   },
   {
     time: "03/2025 - 11/2025",
-    name: "ERP System Developer",
+    name: "Service Desk Technician",
+    company: "XYZ Solutions",
     detail:
-      "Tham gia xây dựng hệ thống ERP cho doanh nghiệp sản xuất. Phụ trách module quản lý nhân sự và kho hàng, tối ưu quy trình nhập liệu và phân quyền người dùng.",
+      "Tiếp nhận và xử lý ticket từ người dùng liên quan đến hệ thống email, VPN, Active Directory và các thiết bị văn phòng. Theo dõi, hỗ trợ từ xa và đảm bảo SLA cho các yêu cầu IT nội bộ.",
   },
   {
     time: "12/2025 - 05/2026",
-    name: "Full Stack Developer",
+    name: "System Administrator",
+    company: "Tech Innovation",
     detail:
-      "Thiết kế và triển khai hệ thống web full stack sử dụng Next.js, NestJS và PostgreSQL. Thực hiện deploy với Docker và tối ưu hiệu suất hệ thống trên môi trường production.",
+      "Quản lý và giám sát hệ thống Windows Server, phân quyền người dùng, backup dữ liệu và theo dõi tình trạng hoạt động của hệ thống mạng nhằm đảm bảo tính ổn định và bảo mật cho doanh nghiệp.",
   },
 ];

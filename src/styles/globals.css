@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @import "flowbite-react/plugin/tailwindcss";
 @source "../../.flowbite-react/class-list.json";
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   /* Background */
@@ -9,7 +12,7 @@
 
   /* Text */
   --foreground: #1f2937;
-  --muted: #6b7280;
+  --muted: #ffffff;
 
   /* Luxury Gold */
   --primary: #c8a96b;
@@ -20,10 +23,27 @@
 
   /* Border */
   --border: #e5e7eb;
+
+  /* Colors */
+  --color-background: #f8f5f0;
+  --color-surface: #ffffff;
+
+  --color-foreground: #1f2937;
+  --color-muted: #8b2020;
+
+  --color-primary: #c8a96b;
+  --color-primary-hover: #b89355;
+
+  --color-accent: #8b7355;
+  --color-border: #e5e7eb;
+
+  /* Custom text colors */
+  --color-text-primary: #f3f4f6;
+  --color-text-detail: #9ca3af;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--gray-900);
   color: var(--foreground);
   font-family: "Inter", sans-serif;
 }
