@@ -2,6 +2,8 @@
 
 import { FaArrowRight } from "react-icons/fa";
 import { IoStatsChartOutline } from "react-icons/io5";
+import { SkillCard } from "../card";
+import { SkillData } from "@/data/mocks/skills";
 
 const SkillsSection = () => {
   return (
@@ -21,7 +23,17 @@ const SkillsSection = () => {
           <FaArrowRight className="text-[10px] mt-1.5" />
         </button>
       </div>
-      <div className="mb-5 flex gap-5"></div>
+      <div className="mb-5 grid grid-cols-2 lg:grid-cols-3 gap-5">
+        {SkillData?.map((index) => (
+          <SkillCard
+            key={index.id}
+            title={index?.name}
+            skills={index?.technologies}
+            img={index?.img}
+            score={index?.score}
+          />
+        ))}
+      </div>
     </div>
   );
 };
