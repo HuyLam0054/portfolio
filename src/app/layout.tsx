@@ -7,9 +7,9 @@ export default function BaseLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html suppressHydrationWarning className="scroll-smooth">
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <head>
-        <ThemeModeScript />
+        <ThemeModeScript mode="auto" />
       </head>
       <body>{children}</body>
     </html>

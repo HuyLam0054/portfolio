@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <div className="">
       <div className="">
-        <p className="text-[15px] text-gray-300 px-7 text-justify">
+        <p className="text-[15px] text-gray-300 px-2 lg:px-7 text-justify">
           Tôi mong muốn phát triển sự nghiệp trong lĩnh vực System
           Administration với mục tiêu trở thành một IT Administrator có khả năng
           quản lý, vận hành và tối ưu hệ thống hạ tầng CNTT ổn định, an toàn và
