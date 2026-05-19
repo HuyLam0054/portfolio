@@ -5,7 +5,7 @@ import { Timeline2_Component } from "../timeline";
 
 const ExperienceSection = () => {
   return (
-    <div className="px-5">
+    <div className="px-2 md:px-5">
       {[...Experience].reverse().map((item, index) => (
         <Timeline2_Component
           key={index}
