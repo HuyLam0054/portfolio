@@ -21,6 +21,7 @@ const SkillsSection = () => {
           <FaArrowRight className="text-[10px] mt-1.5" />
         </button>
       </div>
+      <div className="mb-5 flex gap-5"></div>
     </div>
   );
 };
