@@ -32,12 +32,12 @@ const SkillCard = ({ img, title, skills, score }: SkillsProps) => {
           {title}
         </h5>
       </div>
-      <p className="text-[13px] mb-6 text-gray-200">
+      <span className="text-[13px] mb-6 text-gray-200">
         {skills?.map((index) => (
           <p key={index}>- {index}</p>
         ))}
-      </p>
-      <div className="w-full bg-gray-800 rounded-full">
+      </span>
+      <div className="w-full bg-gray-800 rounded-full mt-4">
         <div
           className="bg-orange-300 text-xs font-medium text-gray-800 text-center p-0.5 leading-none rounded-full h-4 flex items-center justify-center"
           style={{ width: `${score}%` }}
