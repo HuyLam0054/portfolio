@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { CiLocationOn } from "react-icons/ci";
-import { FiPhone } from "react-icons/fi";
-import { GoMail } from "react-icons/go";
+import { CiLocationOn, CiMail } from "react-icons/ci";
+import { SlPhone } from "react-icons/sl";
 
 const RootFooter = () => {
   return (
-    <footer className="bg-neutral-primary-soft rounded-base shadow-xs border border-default m-4">
+    <footer className="bg-gray-900 shadow-xs my-4">
+      <hr className="my-3 sm:mx-auto lg:my-8" />
       <div className="w-full max-w-7xl mx-auto p-4 md:py-8">
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
           <div className="col-span-2 lg:col-span-1">
@@ -25,35 +25,37 @@ const RootFooter = () => {
             </span>
           </div>
           <div className="flex items-center justify-center h-full">
-            <GoMail className="text-orange-300 w-10 h-10 mr-4" />
-            <span className="flex flex-col">
-              <p className="text-[15px] text-white">Email</p>
-              <Link href="/" className="text-[13px] text-gray-400 mt-1">
+            <div className="flex flex-col">
+              <span className="flex flex-row text-lg text-white">
+                <CiMail className="text-orange-300 w-6 h-6 mr-1" />
+                Email
+              </span>
+              <span className="text-[13px] text-gray-400 mt-1">
                 huy.lam.0054@gmail.com
-              </Link>
-            </span>
+              </span>
+            </div>
           </div>
           <div className="flex items-center justify-center h-full">
-            <Link href="/" className="flex flex-row">
-              <CiLocationOn className="text-orange-300 w-10 h-10 mr-4" />
-              <span className="flex flex-col">
-                <p className="text-[15px] text-white">Location</p>
-                <p className="text-[13px] text-gray-400 mt-1">
-                  Ho Chi Minh, Viet Nam
-                </p>
+            <div className="flex flex-col">
+              <span className="flex flex-row text-lg text-white">
+                <CiLocationOn className="text-orange-300 w-6 h-6 mr-1" />
+                Location
               </span>
-            </Link>
+              <span className="text-[13px] text-gray-400 mt-1">
+                Ho Chi Minh, Viet Nam
+              </span>
+            </div>
           </div>
           <div className="flex items-center justify-center h-full">
-            <Link href="/" className="flex flex-row">
-              <FiPhone className="text-orange-300 w-10 h-10 mr-4" />
-              <span className="flex flex-col">
-                <p className="text-[15px] text-white">Phone</p>
-                <p className="text-[13px] text-gray-400 mt-1">
-                  +84 345 678 910
-                </p>
+            <div className="flex flex-col">
+              <span className="flex flex-row text-lg text-white">
+                <SlPhone className="text-orange-300 w-6 h-6 mr-1" />
+                Phone
               </span>
-            </Link>
+              <span className="text-[13px] text-gray-400 mt-1 ml-6">
+                (+84) 345 678 910
+              </span>
+            </div>
           </div>
           <div className="flex items-center justify-center h-full">
             <button

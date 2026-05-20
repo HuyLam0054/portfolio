@@ -63,7 +63,7 @@ const ProjectCard = ({ image, name, detail, tech }: ProjectsProps) => {
       </Link>
       <div className="p-2 text-center">
         <Link href="#">
-          <h5 className="my-3 text-white text-[15px] font-semibold tracking-tight text-heading">
+          <h5 className="my-3 text-white hover:text-orange-300 duration-300 text-[15px] font-semibold tracking-tight text-heading">
             {name}
           </h5>
         </Link>
